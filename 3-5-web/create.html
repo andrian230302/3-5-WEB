@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouses</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <div class="create">
+        <form id="add_form">
+            <a href="index.html">Home page</a>
+
+            <h1>CREATE Mouse</h1>
+            <label for="exapleImputEmail1">Production Year</label>
+            <input type="number" id="production_year_input">
+            <label for="exapleImputEmail1">Producer Name</label>
+            <input type="text" id="producer_name_input">
+            <label for="exapleImputEmail1">Price In UAH</label>
+            <input type="number" id="price_in_uah_input">
+            <label for="exapleImputEmail1">Color</label>
+            <input type="text" id="color_input">
+            <label for="exapleImputEmail1">Weight In Kilograms</label>
+            <input type="number" id="weight_in_kilograms_input">
+            <label for="exapleImputEmail1">Cable For Power</label>
+            <input list="browsers" id="cable_for_power_input">
+            <label for="exapleImputEmail1">Number Of Button</label>
+            <input type="number" id="number_of_button_input">
+            <button id="submit_button" type="submit">
+                Submit
+            </button>
+        </form>
+
+        <datalist id="browsers">
+            <option value="USB">
+            <option value="HDMI">
+          </datalist>
+    </div>
+
+    <script type="module" src="./js/create.js"></script>
+</body>
+
+</html>
